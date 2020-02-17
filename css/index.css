@@ -114,7 +114,7 @@ body {
 	margin-top: 1%;
 }
 
-hr{
+hr.pg{
 	border:1px solid black;
 }
 
@@ -384,7 +384,7 @@ span.phonenumber {
 		padding-bottom: 5%;
 		width: auto;
 	}
-	hr {
+	hr.lb {
 		border-top:0px;
 		border-bottom:1px solid black;
 		width: 100%;

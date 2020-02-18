@@ -1,3 +1,392 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+
+   v2.0 | 20110126
+
+   License: none (public domain)
+
+*/
 
 
+
+html, body, div, span, applet, object, iframe,
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+a, abbr, acronym, address, big, cite, code,
+
+del, dfn, em, img, ins, kbd, q, s, samp,
+
+small, strike, strong, sub, sup, tt, var,
+
+b, u, i, center,
+
+dl, dt, dd, ol, ul, li,
+
+fieldset, form, label, legend,
+
+table, caption, tbody, tfoot, thead, tr, th, td,
+
+article, aside, canvas, details, embed, 
+
+figure, figcaption, footer, header, hgroup, 
+
+menu, nav, output, ruby, section, summary,
+
+time, mark, audio, video {
+
+	margin: 0;
+
+	padding: 0;
+
+	/*border: 0;*/
+
+	font-size: 100%;
+
+	font: inherit;
+
+	vertical-align: baseline;
+
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+
+footer, header, hgroup, menu, nav, section {
+
+	display: block;
+
+}
+
+body {
+
+	line-height: 1;
+
+}
+
+blockquote, q {
+
+	quotes: none;
+
+}
+
+blockquote:before, blockquote:after,
+
+q:before, q:after {
+
+	content: '';
+
+	content: none;
+
+}
+
+table {
+
+	border-collapse: collapse;
+
+	border-spacing: 0;
+
+}
+
+
+
+/* Set every element's box-sizing to border-box */
+
+* {
+	box-sizing: border-box;
+	border:0px solid red;
+}
+html, body {
+    height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+/*Page Container*/
+
+body {
+	margin-left:7.5%;
+	margin-right:7.5%;
+	margin-top: 1%;
+}
+
+hr.pg{
+	border:1px solid black;
+}
+
+/*Nav bar*/
+nav {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 2%;
+	display: flex;
+	width:100%;
+	align-items: center;
+}
+
+div.navigationTab {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+}
+
+nav a {
+	font-size: 23px;
+	text-decoration: none;
+	color: lightgrey;
+}
+
+nav a:hover{
+	color: blue;
+}
+
+div.logo{
+	display: flex;
+	width: 23%;
+	justify-content: right;
+	flex-wrap: wrap;
+}
+
+nav img.logo{
+	display: flex;
+	width: 100%;
+}
+
+/*start section*/
+
+section.start {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	display: flex;
+	width:100%;
+}
+
+h1 {
+	font-size: 125px;
+	text-align: center;
+}
+
+div.halfOfPage{
+	width:50%;
+	display: flex;
+    justify-content: center;
+	flex-wrap: wrap;
+	align-content: center;
+}
+
+div.h1 {
+	display: flex;
+	justify-content: center;
+	height: 55%;
+}
+
+div.button {
+	padding-top: 3%;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+
+}
+
+div.button a{
+	padding:5px 80px 5px 80px;
+	border: 1px solid black;
+	text-decoration: none;
+	color:black;
+}
+
+div.button a:hover{
+	border: 1px solid lightgrey;
+	text-decoration: none;
+	color:lightgrey;
+}
+
+div.button p{
+	border: 0;
+}
+
+div.headerImg {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+ }
+
+section.start img{
+	 width: 90%;
+ }
+
+/*info Section*/
+
+section.info {
+	padding-top: 4%;
+	padding-bottom: 4%;
+	display: flex;
+}
+
+div.textbox {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	width: 100%;
+}
+
+div.featuresblock{
+	width: 48%;
+}
+
+div.aboutblock{
+	width: 50%;
+
+}
+
+img.middle-img {
+	width:100%;
+	align-self: center;
+}
+
+div.servicesblock, div.productblock, div.visionblock{
+	width: 33%;
+}
+
+/*Bottom Section*/
+
+footer {
+	padding-top: 4%;
+	padding-bottom: 4%;
+
+}
+
+address{
+	padding-top: 4%;
+	width:20%;
+}
+
+p.copyright {
+	padding-bottom: 4%;
+	text-align:center;
+	margin:0 auto;
+}
+
+div.cpc {
+	text-align:center;
+	margin: 0 auto;
+}
+
+span.phonenumber {
+	text-decoration: none;
+	color:black;
+}
+
+/*Media*/
+
+@media (max-width:800px){
+    body{
+        margin-left:2%;
+        margin-right:2%;
+    }
+    nav {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    div.navigationTab {
+        padding-top: 2%;
+        padding-bottom: 2%;
+        width: 100%;
+        justify-content: space-around;
+    }
+    nav a{
+        display: flex;
+        color: lightgrey;
+        font-size: 2vh;
+        text-align: center;
+        width: auto;
+    }
+    div.logo{
+        width:25%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
+    section.start {
+        display:flex;
+        flex-direction:column;
+        align-items: center;
+    }
+    div.halfOfPage{
+        display: flex;
+        width: 100%;
+    }
+    h1{
+        font-size: 70px;
+    }
+    div.headerImg{
+        display:none;
+    }
+    div.button{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        padding-bottom: 4%;
+    }
+    div.button a{
+        padding:2px 40px 2px 40px;
+	}
+	
+}
+@media (max-width:500px){
+	body{
+        margin-left:4%;
+        margin-right:4%;
+	}
+	header{
+		margin-left:-5%;
+		margin-right:-5%;
+	}
+	div.navigationTab{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;	
+	}
+
+	div.logo{
+		display: flex;
+		width:100%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		border-bottom:1px solid black;
+		justify-content: center;
+	}
+	div img.logo{
+		width: 40%;
+		padding: 2%;
+	}
+	nav a {
+		width: 20%;
+		font-size: 20px;
+		justify-content: center;
+		padding: 2%;
+	}
+
+	div.aboutblock, div.featuresblock, div.servicesblock, div.visionblock, div.productblock{
+		width: 100%;
+		padding-top: 5%;
+		padding-bottom: 5%;
+	}
+	div.textbox{
+		display: flex;
+		flex-direction: column;
+	}
+	address{
+		padding-bottom: 5%;
+		width: auto;
+	}
+	hr.lb {
+		border-top:0px;
+		border-bottom:1px solid black;
+		width: 100%;
+	}
+}
